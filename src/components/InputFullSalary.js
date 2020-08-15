@@ -1,17 +1,20 @@
 import React, { Component } from 'react';
 
 export default class InputFullSalary extends Component {
-  calculationSalary = (event) => {
-    console.log(event.target.value);
+  returnSalary = (event) => {
+    const { valueChange } = this.props;
+    valueChange(event.target.value);
   };
   render() {
+    const { fullSalary } = this.props;
     return (
       <div>
         <input
           type="number"
           name="fullSalary"
           id="fullSalary"
-          onChange={this.calculationSalary}
+          value={fullSalary}
+          onChange={this.returnSalary}
         />
       </div>
     );

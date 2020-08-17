@@ -1,0 +1,20 @@
+.flexBar {
+  display: flex;
+  flex-direction: row;
+}
+
+.flexBar div {
+  height: 20px;
+}
+
+.inss {
+  background-color: #e67e22;
+}
+
+.ir {
+  background-color: #c0392b;
+}
+
+.liquid {
+  background-color: #16a085;
+}
